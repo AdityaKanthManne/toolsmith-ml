@@ -1,0 +1,6 @@
+[
+ {"prompt":"Apple revenue in 2022","expected":{"tool":"get_revenue","arguments":{"company":"Apple","fiscal_year":2022}}},
+ {"prompt":"Microsoft revenue in 2021","expected":{"tool":"get_revenue","arguments":{"company":"Microsoft","fiscal_year":2021}}},
+ {"prompt":"Calculate Apple revenue growth from 2020 2021","expected":{"tool":"calculate_growth","arguments":{"company":"Apple","start_year":2020,"end_year":2021}}},
+ {"prompt":"Search Microsoft filing for margin risk","expected":{"tool":"search_filing","arguments":{"company":"Microsoft","query":"Search Microsoft filing for margin risk"}}}
+]
