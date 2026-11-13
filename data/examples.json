@@ -1,0 +1,5 @@
+[
+ {"prompt":"Apple revenue in 2025","expected":{"tool":"get_revenue","arguments":{"company":"Apple","fiscal_year":2025}}},
+ {"prompt":"Calculate Microsoft revenue growth from 2023 2024","expected":{"tool":"calculate_growth","arguments":{"company":"Microsoft","start_year":2023,"end_year":2024}}},
+ {"prompt":"Search Nvidia filing for inventory risk","expected":{"tool":"search_filing","arguments":{"company":"Nvidia","query":"Search Nvidia filing for inventory risk"}}}
+]
