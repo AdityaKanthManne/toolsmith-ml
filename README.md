@@ -28,3 +28,9 @@ The supplied four training samples are a **smoke-test fixture, not a useful prod
 
 ## Limits
 Fine-tuning and DPO have not been run or benchmarked, and there is no hosted inference endpoint. This repository is an executable evaluation/training foundation, not evidence that a specialized model has achieved target accuracy.
+
+## Model-comparison statistics extension
+
+`toolsmith.statistics.paired_accuracy_delta` computes baseline-versus-tuned accuracy differences and seeded paired-bootstrap percentile intervals on held-out predictions. Run `pytest -q tests/test_statistics.py`. Pairing is essential because both models are evaluated on the same tasks. Bootstrap intervals can be unreliable on tiny datasets or strongly dependent samples.
+
+This does **not** mean an adapter has been trained or its accuracy improved. **Planned next:** larger licensed train/validation/test splits, true LoRA training on compatible compute, prompt-only baselines, per-tool breakdowns, train/test leakage checks and ablation studies. DPO/JAX are research extensions only.
